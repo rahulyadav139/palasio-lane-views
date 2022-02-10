@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palasio Lane</title>
+    <link
+      rel="stylesheet"
+      href="https://palasio-designs.netlify.app/style.css"
+    />
+    <link rel="stylesheet" href="./shared.css" />
+    <link rel="stylesheet" href="./products.css" />
+  </head>
+  <body>
+    <!-- e-commerce website navigation -->
+    <nav class="nav-bar shadow" id="header">
+      <div class="brand-logo">
+        <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+        ><i class="fas fa-angle-right"></i>
+      </div>
+
+      <div class="input-field-icon">
+        <label
+          ><span class="icon small"><i class="bi bi-search"></i></span
+          ><input placeholder="Search" type="text"
+        /></label>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <div class="badge-container">
+              <button class="btn icon medium primary badge-counter">
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="badge-number">10</span>
+            </div>
+          </li>
+          <li>
+            <div class="badge-container">
+              <button class="btn icon medium primary badge-counter">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <span class="badge-number">10</span>
+            </div>
+          </li>
+          <li>
+            <div class="profile avatar small">
+              <span class="icon medium white"><i class="fas fa-user"></i></span>
+            </div>
+
+            <div class="login-dropdown shadow">
+              <button class="btn primary">Login</button>
+              <p class="text-small">
+                New to Palasio Lane? <a class="link primary">Signup.</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main-section">
+      <div class="filter-section">
+        <a href="#" class="link primary">Reset</a>
+        <h4>Price Range</h4>
+        <div class="flex space-between align-center">
+          <p>Max</p>
+          <div class="input-field-icon">
+            <label>
+              <!-- icon container -->
+              <span class="icon small"><i class="fas fa-rupee-sign"></i></span>
+              <input
+                class="testnow"
+                placeholder="Maximum Price"
+                type="number"
+              />
+            </label>
+          </div>
+          
+        </div>
+
+        <input class="styled-slider" type="range" />
+
+        <div class="hr-line fad"></div>
+        <h4>Car Model</h4>
+        <div class="car-item">
+          <input class="car__brand-input" type="checkbox" id="tata" />
+          <label class="car__brand-label" for="tata">Tata</label>
+          <ul class="car__models">
+            <li>
+              <label for="tata-1"
+                ><input type="checkbox" id="tata-1" /> Tata Harrier</label
+              >
+            </li>
+            <li>
+              <label for="tata-2"
+                ><input type="checkbox" id="tata-2" /> Tata Safari</label
+              >
+            </li>
+            <li>
+              <label for="tata-3"
+                ><input type="checkbox" id="tata-3" /> Tata Nexon</label
+              >
+            </li>
+            <li>
+              <label for="tata-4"
+                ><input type="checkbox" id="tata-4" /> Tata Tiago</label
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="car-item">
+          <input class="car__brand-input" type="checkbox" id="mahindra" />
+          <label class="car__brand-label" for="mahindra">Mahindra</label>
+
+          <ul class="car__models">
+            <li>
+              <label for="mahindra-1"
+                ><input type="checkbox" id="mahindra-1" /> Mahindra
+                Bolero</label
+              >
+            </li>
+            <li>
+              <label for="mahindra-2"
+                ><input type="checkbox" id="mahindra-2" /> Mahindra
+                XUV500</label
+              >
+            </li>
+            <li>
+              <label for="mahindra-3"
+                ><input type="checkbox" id="mahindra-3" /> Mahindra Xylo</label
+              >
+            </li>
+            <li>
+              <label for="mahindra-4"
+                ><input type="checkbox" id="mahindra-4" /> Mahindra
+                Marazzo</label
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="hr-line fad"></div>
+        <h4>Rating</h4>
+        <!-- rating -->
+        <div class="rating-container">
+          <input type="radio" name="rate" id="rate-5" />
+          <label for="rate-5"><i class="fas fa-star"></i></label>
+          <input type="radio" name="rate" id="rate-4" />
+          <label for="rate-4"><i class="fas fa-star"></i></label>
+          <input type="radio" name="rate" id="rate-3" />
+          <label for="rate-3"><i class="fas fa-star"></i></label>
+          <input type="radio" name="rate" id="rate-2" />
+          <label for="rate-2"><i class="fas fa-star"></i></label>
+          <input type="radio" name="rate" id="rate-1" />
+          <label for="rate-1"><i class="fas fa-star"></i></label>
+        </div>
+
+        <button style="width: 100%" class="btn primary">Filter</button>
+      </div>
+      <div class="listing-section">
+        <div class="listing-section__products">
+          <!-- ecom card with badge -->
+
+          <div class="card shadow ecom">
+            <div class="image">
+              <img
+                src="./Assets/categories/interior/car-armrest-4-400x400.webp"
+                alt=""
+              />
+
+              <!-- badge containers -->
+
+              <!-- highlighted badge with red color -->
+              <span class="badge highlight top left">-20%</span>
+
+              <!-- standard badge -->
+              <span class="badge bottom right"
+                >4.4 <i class="fas fa-star"></i> | 123</span
+              >
+            </div>
+            <div class="flex space-between">
+              <h1 class="brand">Impos Decor</h1>
+              <button class="btn icon medium primary">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h2 class="title">Vintage artifacts vase</h2>
+            <div class="price">
+              <div class="price__old">$100</div>
+              <div class="price__new">$80</div>
+            </div>
+
+            <button class="btn primary"><strong>Add</strong></button>
+          </div>
+
+          <!-- ecom card with badge -->
+
+          <div class="card shadow ecom">
+            <div class="image">
+              <img
+                src="./Assets/categories/interior/car-mats-400x400.webp"
+                alt=""
+              />
+
+              <!-- badge containers -->
+
+              <!-- highlighted badge with red color -->
+              <span class="badge highlight top left">-20%</span>
+
+              <!-- standard badge -->
+              <span class="badge bottom right"
+                >4.4 <i class="fas fa-star"></i> | 123</span
+              >
+            </div>
+            <div class="flex space-between">
+              <h1 class="brand">Impos Decor</h1>
+              <button class="btn icon medium primary">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h2 class="title">Vintage artifacts vase</h2>
+            <div class="price">
+              <div class="price__old">$100</div>
+              <div class="price__new">$80</div>
+            </div>
+
+            <button class="btn primary"><strong>Add</strong></button>
+          </div>
+
+          <!-- ecom card with badge -->
+
+          <div class="card shadow ecom ribbon" ribbon-content="Exclusive">
+            <div class="image">
+              <img
+                src="./Assets/categories/interior/car-perfume-400x400.webp"
+                alt=""
+              />
+
+              <!-- badge containers -->
+
+              <!-- highlighted badge with red color -->
+              <span class="badge highlight top left">-20%</span>
+
+              <!-- standard badge -->
+              <span class="badge bottom right"
+                >4.4 <i class="fas fa-star"></i> | 123</span
+              >
+            </div>
+            <div class="flex space-between">
+              <h1 class="brand">Impos Decor</h1>
+              <button class="btn icon medium primary">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h2 class="title">Vintage artifacts vase</h2>
+            <div class="price">
+              <div class="price__old">$100</div>
+              <div class="price__new">$80</div>
+            </div>
+
+            <button class="btn primary"><strong>Add</strong></button>
+          </div>
+
+          <!-- ecom card with badge -->
+
+          <div class="card shadow ecom">
+            <div class="image">
+              <img
+                src="./Assets/categories/interior/car-perfume-400x400.webp"
+                alt=""
+              />
+
+              <!-- badge containers -->
+
+              <!-- highlighted badge with red color -->
+              <span class="badge highlight top left">-20%</span>
+
+              <!-- standard badge -->
+              <span class="badge bottom right"
+                >4.4 <i class="fas fa-star"></i> | 123</span
+              >
+            </div>
+            <div class="flex space-between">
+              <h1 class="brand">Impos Decor</h1>
+              <button class="btn icon medium primary">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h2 class="title">Vintage artifacts vase</h2>
+            <div class="price">
+              <div class="price__old">$100</div>
+              <div class="price__new">$80</div>
+            </div>
+
+            <button class="btn primary"><strong>Add</strong></button>
+          </div>
+
+          <!-- ecom card with badge -->
+
+          <div class="card shadow ecom">
+            <div class="image">
+              <img
+                src="./Assets/categories/interior/car-perfume-400x400.webp"
+                alt=""
+              />
+
+              <!-- badge containers -->
+
+              <!-- highlighted badge with red color -->
+              <span class="badge highlight top left">-20%</span>
+
+              <!-- standard badge -->
+              <span class="badge bottom right"
+                >4.4 <i class="fas fa-star"></i> | 123</span
+              >
+            </div>
+            <div class="flex space-between">
+              <h1 class="brand">Impos Decor</h1>
+              <button class="btn icon medium primary">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h2 class="title">Vintage artifacts vase</h2>
+            <div class="price">
+              <div class="price__old">$100</div>
+              <div class="price__new">$80</div>
+            </div>
+
+            <button class="btn primary"><strong>Add</strong></button>
+          </div>
+        </div>
+
+        <div class="listing-section__pages">
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>Policy Info</h3>
+        <p>Privacy policy</p>
+        <p>Terms of Sale</p>
+        <p>Cancellation Policy</p>
+        <p>Return Policy</p>
+        <p>Shipping Policy</p>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>In the News</p>
+        <p>Career</p>
+        <p>Blog</p>
+        <p>Contact us</p>
+      </div>
+      <div class="footer-col">
+        <h3>Business</h3>
+        <p>Affiliate Partners</p>
+        <p>EMI</p>
+        <p>Bulk Order</p>
+        <p>Become a Distributor</p>
+      </div>
+      <div class="footer-col">
+        <h3>Help</h3>
+        <p>Claim Warranty</p>
+        <p>Payment Options</p>
+        <p>Sitemap</p>
+      </div>
+      <div class="flex col gap footer-col">
+        <h3>Newsletter & Subscription</h3>
+        <p>
+          Subscription to our newsletter and get information about our latest
+          offers and prices.
+        </p>
+
+        <div class="input-field-icon">
+          <label>
+            <!-- icon container -->
+            <span class="icon small"><i class="fas fa-envelope"></i></span>
+            <input placeholder="E-mail" type="text" />
+          </label>
+        </div>
+        <button class="btn primary">Enter</button>
+      </div>
+    </footer>
+    <a class="icon small circle primary float bottom right" href="#header">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </body>
+</html>
