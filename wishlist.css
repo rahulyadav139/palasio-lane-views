@@ -1,0 +1,22 @@
+.main {
+  width: 100%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+.wishlist {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(10rem, auto));
+  gap: 1.5rem;
+  grid-auto-flow: row dense;
+}
+
+.card.ecom {
+  width: 100%;
+  cursor: pointer;
+}
+.btn.icon.remove-item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 1.5rem;
+}
