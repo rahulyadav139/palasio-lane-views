@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palasio Lane</title>
+    <link
+      rel="stylesheet"
+      href="https://palasio-designs.netlify.app/style.css"
+    />
+    <link rel="stylesheet" href="./shared.css" />
+    <link rel="stylesheet" href="./product-detail.css" />
+  </head>
+  <body>
+    <!-- e-commerce website navigation -->
+    <nav class="nav-bar shadow" id="header">
+      <div class="brand-logo">
+        <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+        ><i class="fas fa-angle-right"></i>
+      </div>
+
+      <div class="input-field-icon">
+        <label
+          ><span class="icon small"><i class="bi bi-search"></i></span
+          ><input placeholder="Search" type="text"
+        /></label>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <div class="badge-container">
+              <button class="btn icon medium primary badge-counter">
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="badge-number">10</span>
+            </div>
+          </li>
+          <li>
+            <div class="badge-container">
+              <button class="btn icon medium primary badge-counter">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <span class="badge-number">10</span>
+            </div>
+          </li>
+          <li>
+            <div class="profile avatar small">
+              <span class="icon medium white"><i class="fas fa-user"></i></span>
+            </div>
+
+            <div class="login-dropdown shadow">
+              <button class="btn primary">Login</button>
+              <p class="text-small">
+                New to Palasio Lane? <a class="link primary">Signup.</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main class="main">
+      <!-- responsive card -->
+
+      <div class="card shadow product-detail">
+        <div class="image">
+          <!-- card image -->
+          <img
+            class="img-responsive"
+            src="./Assets/categories/interior/car-armrest-4-400x400.webp"
+            alt="sample"
+          />
+        </div>
+        <div class="product-detail__text">
+          <h1 class="brand">
+            In publishing and graphic design, Lorem ipsum is a placeholder text
+          </h1>
+          <h2 class="title">Loud Speaker</h2>
+          <div class="rating">
+            4.4 <i class="fas fa-star"></i> | 3.9k Ratings
+          </div>
+          <div class="hr-line solid grey"></div>
+          <div class="price flex gap">
+            <div class="price__old">$100</div>
+            <div class="price__new">$80</div>
+          </div>
+          <div class="text-details">inclusive of all taxes</div>
+          <div class="buttons">
+            <button class="btn primary icon-with-text">
+              Add to Cart
+              <span><i class="fas fa-shopping-cart"></i></span>
+            </button>
+            <button class="btn outline primary">Wishlist</button>
+          </div>
+        </div>
+      </div>
+      <h3>Product Highlights</h3>
+      <ul>
+        <li>
+          Clever design – Made of Heavy-duty rubber elastic and the high-quality
+          spandex mesh. It is a double mesh layer car sunshade which protects
+          passengers from glare and sunburn.
+        </li>
+        <li>
+          Windows can be raised and lowered when sunshades are in use without
+          any interruption.
+        </li>
+        <li>
+          UV Sun protection - Protect your loved ones from UV rays, heat, bugs
+          and dust, all year around with noticeable heat reduction in cabin.
+        </li>
+        <li>
+          Covers all window surface - No sunlight leaks, unlike other car
+          shades. It is a total sun blocker with a double layer mesh, though
+          person seating on back seat can see through the window shade from the
+          inside out.
+        </li>
+        <li>
+          Quick and Easy Installation - Open the Car rear window, stretch the
+          car Sun shades and roll over the window.
+        </li>
+        <li>
+          Only for Rear Window – We only provide 2 units in one set of sunshades
+          which fits only for the rear windows and are not compactable for
+          driver and passenger seat windows.
+        </li>
+      </ul>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>Policy Info</h3>
+        <p>Privacy policy</p>
+        <p>Terms of Sale</p>
+        <p>Cancellation Policy</p>
+        <p>Return Policy</p>
+        <p>Shipping Policy</p>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>In the News</p>
+        <p>Career</p>
+        <p>Blog</p>
+        <p>Contact us</p>
+      </div>
+      <div class="footer-col">
+        <h3>Business</h3>
+        <p>Affiliate Partners</p>
+        <p>EMI</p>
+        <p>Bulk Order</p>
+        <p>Become a Distributor</p>
+      </div>
+      <div class="footer-col">
+        <h3>Help</h3>
+        <p>Claim Warranty</p>
+        <p>Payment Options</p>
+        <p>Sitemap</p>
+      </div>
+      <div class="flex col gap footer-col">
+        <h3>Newsletter & Subscription</h3>
+        <p>
+          Subscription to our newsletter and get information about our latest
+          offers and prices.
+        </p>
+
+        <div class="input-field-icon">
+          <label>
+            <!-- icon container -->
+            <span class="icon small"><i class="fas fa-envelope"></i></span>
+            <input placeholder="E-mail" type="text" />
+          </label>
+        </div>
+        <button class="btn primary">Enter</button>
+      </div>
+    </footer>
+    <a class="icon small circle primary float bottom right" href="#header">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+  </body>
+</html>
