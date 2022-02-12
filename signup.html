@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Palasio Lane</title>
+    <link
+      rel="stylesheet"
+      href="https://palasio-designs.netlify.app/style.css"
+    />
+    <link rel="stylesheet" href="./shared.css" />
+    <link rel="stylesheet" href="./auth.css" />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <!-- e-commerce website navigation -->
+    <nav class="nav-bar shadow" id="header">
+      <div class="brand-logo">
+        <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+        ><i class="fas fa-angle-right"></i>
+      </div>
+
+      <div class="input-field-icon">
+        <label
+          ><span class="icon small"><i class="bi bi-search"></i></span
+          ><input placeholder="Search" type="text"
+        /></label>
+      </div>
+
+      <div>
+        <ul>
+          <li>
+            <div class="badge-container">
+              <button class="btn icon medium primary badge-counter">
+                <i class="fas fa-heart"></i>
+              </button>
+              <span class="badge-number">10</span>
+            </div>
+          </li>
+          <li>
+            <div class="badge-container">
+              <button class="btn icon medium primary badge-counter">
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+              <span class="badge-number">10</span>
+            </div>
+          </li>
+          <li>
+            <div class="profile avatar small">
+              <span class="icon medium white"><i class="fas fa-user"></i></span>
+            </div>
+
+            <div class="login-dropdown shadow">
+              <button class="btn-login btn primary">Login</button>
+              <p class="text-small">
+                New to Palasio Lane? <a class="link primary">Signup.</a>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="modal-backdrop hidden">
+        <!-- signup modal -->
+
+        <div class="modal-login shadow">
+          <div class="modal-login__brand flex center col">
+            <div class="brand-logo">
+              <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
+              ><i class="fas fa-angle-right"></i>
+            </div>
+            <h1 class="text-white">palasio lane</h1>
+          </div>
+          <form class="modal-login__form">
+            <h1 class="text-primary">Sign up</h1>
+            <div class="wrapper-username flex gap">
+              <div>
+                <label for="firstname">First Name</label>
+                <input class="input-field" id="firstname" type="text" />
+              </div>
+              <div>
+                <label for="lastname">Last Name</label>
+                <input class="input-field" id="lastname" type="text" />
+              </div>
+            </div>
+            <label for="email">Email</label>
+            <input class="input-field" id="email" type="email" />
+            <label for="password">Password</label>
+
+            <input class="input-field" id="password" type="password" />
+            <div class="flex end">
+              <a class="link text-small" href="#">forgot password?</a>
+            </div>
+            <button class="btn primary">Signup</button>
+            <p>Already a member? <a class="link primary">Login</a></p>
+          </form>
+          <button class="btn-dismiss btn icon medium">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

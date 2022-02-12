@@ -33,3 +33,10 @@
   color: var(--white-color);
   font-size: 3rem;
 }
+
+.wrapper-username input {
+  width: 100%;
+}
+.wrapper-username label {
+  margin-bottom: 1rem;
+}
