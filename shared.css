@@ -10,17 +10,16 @@ a {
   width: 100%;
   max-width: 37.5rem;
 }
-.nav-bar ul li:last-child {
+
+.nav-bar .profile-item {
   position: relative;
-}
-.nav-bar ul li:last-child:hover .login-dropdown {
-  display: block;
-}
-.profile {
   cursor: pointer;
 }
+.nav-bar .profile-item:hover .profile-item-dropdown {
+  display: block;
+}
 
-.login-dropdown {
+.profile-item-dropdown {
   position: absolute;
   top: 3rem;
   right: 0;
@@ -31,11 +30,26 @@ a {
   text-align: center;
   background: var(--off-white-color);
 }
-.login-dropdown button {
+.profile-item-dropdown button {
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
 }
+/* .profile-item-dropdown ul {
+  display: flex;
+  flex-direction: column;
+} */
 
+.profile-item-dropdown ul li {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin: 0.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.5px solid var(--grey-color);
+}
 /* footer */
 
 .footer {

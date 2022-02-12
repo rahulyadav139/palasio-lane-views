@@ -28,16 +28,18 @@
       </div>
 
       <div>
-        <ul>
-          <li>
+        <ul class="list-items">
+          <!-- wishlist icon -->
+          <!-- <li class="list-item">
             <div class="badge-container">
               <button class="btn icon medium primary badge-counter">
                 <i class="fas fa-heart"></i>
               </button>
               <span class="badge-number">10</span>
             </div>
-          </li>
-          <li>
+          </li> -->
+          <!-- cart icon -->
+          <li class="list-item">
             <div class="badge-container">
               <button class="btn icon medium primary badge-counter">
                 <i class="fas fa-shopping-cart"></i>
@@ -45,16 +47,36 @@
               <span class="badge-number">10</span>
             </div>
           </li>
-          <li>
-            <div class=" profile avatar small">
-              <span class="icon medium white"><i class="fas fa-user"></i></span>
+          <!-- user profile item -->
+          <!-- <li class="profile-item list-item">
+            <div class="avatar small">
+              <img
+                src="https://i.picsum.photos/id/704/536/354.jpg?hmac=k_PDx86tD-ILOtsUOKY9t5LAL5ycKiQ4ryVdlxhWoek"
+                alt="sample"
+              />
             </div>
-            
-            <div class="login-dropdown shadow">
-              <button class="btn primary">Login</button>
-              <p class="text-small">New to Palasio Lane? <a class="link primary" >Signup.</a></p>
+
+            <div class="profile-item-dropdown shadow">
+              <ul>
+                <li>
+                  <span class="icon primary small"
+                    ><i class="fas fa-user"></i></span
+                  ><span>My Profile</span>
+                </li>
+
+                <li>
+                  <span class="icon primary small"
+                    ><i class="bi bi-box"></i></span
+                  ><span>Orders</span>
+                </li>
+              </ul>
+              <button class="btn primary">Logout</button>
             </div>
-          
+          </li> -->
+          <li class="login-item">
+            <a href="./login.html"
+              ><button class="btn-login btn primary text-bold">Login</button></a
+            >
           </li>
         </ul>
       </div>
@@ -91,10 +113,12 @@
             alt="slide-4"
           />
         </div>
-        <button class="icon medium btn-right"
-          ><i class="bi bi-chevron-right"></i></button>
-        <button class="icon medium btn-left"
-          ><i class="bi bi-chevron-left"></i></button>
+        <button class="icon medium btn-right">
+          <i class="bi bi-chevron-right"></i>
+        </button>
+        <button class="icon medium btn-left">
+          <i class="bi bi-chevron-left"></i>
+        </button>
         <div class="dot-container">
           <div class="dot active"></div>
           <div class="dot"></div>
@@ -104,8 +128,6 @@
       </div>
       <!-- tabs -->
       <div class="categories-container">
-       
-
         <input id="interior" type="radio" name="category" checked />
         <label for="interior">Interior</label>
         <div class="categories-tab">
@@ -211,7 +233,7 @@
       </div>
       <div class="testimonial-container">
         <div class="testimonial shadow">
-          <p class="testimonial__text ">
+          <p class="testimonial__text">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -222,7 +244,6 @@
               src="https://i.picsum.photos/id/423/536/354.jpg?hmac=8jLhwgXq-9hoMVevDrQOg3u9J2QridxrcXKfOEKYONc"
               alt="avatar-1"
             />
-            
           </div>
           <p class="heading-5">Rohan Kapoor</p>
           <p class="text-grey">CEO, Omega Auto</p>
@@ -271,13 +292,12 @@
           Subscription to our newsletter and get information about our latest
           offers and prices.
         </p>
-        
+
         <div class="input-field-icon">
           <label>
             <!-- icon container -->
-            <span class="icon small"><i class="fas fa-envelope"></i></i></span>
+            <span class="icon small"><i class="fas fa-envelope"></i></span>
             <input placeholder="E-mail" type="text" />
-            
           </label>
         </div>
         <button class="btn primary">Enter</button>

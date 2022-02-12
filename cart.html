@@ -28,35 +28,63 @@
       </div>
 
       <div>
-        <ul>
-          <li>
+        <ul class="list-items">
+          <!-- wishlist icon -->
+          <li class="list-item">
             <div class="badge-container">
-              <button class="btn icon medium primary badge-counter">
+              <a
+                href="./wishlist.html"
+                class="icon medium primary badge-counter"
+              >
                 <i class="fas fa-heart"></i>
-              </button>
+              </a>
               <span class="badge-number">10</span>
             </div>
           </li>
-          <li>
+          <!-- cart icon -->
+          <li class="list-item">
             <div class="badge-container">
-              <button class="btn icon medium primary badge-counter">
+              <a
+                href="./cart.html"
+                class="btn icon medium primary badge-counter"
+              >
                 <i class="fas fa-shopping-cart"></i>
-              </button>
+              </a>
               <span class="badge-number">10</span>
             </div>
           </li>
-          <li>
-            <div class="profile avatar small">
-              <span class="icon medium white"><i class="fas fa-user"></i></span>
+          <!-- user profile item -->
+          <li class="profile-item list-item">
+            <div class="avatar small">
+              <img
+                src="https://i.picsum.photos/id/704/536/354.jpg?hmac=k_PDx86tD-ILOtsUOKY9t5LAL5ycKiQ4ryVdlxhWoek"
+                alt="sample"
+              />
             </div>
 
-            <div class="login-dropdown shadow">
-              <button class="btn primary">Login</button>
-              <p class="text-small">
-                New to Palasio Lane? <a class="link primary">Signup.</a>
-              </p>
+            <div class="profile-item-dropdown shadow">
+              <ul>
+                <li>
+                  <span class="icon primary small"
+                    ><i class="fas fa-user"></i></span
+                  ><span>My Profile</span>
+                </li>
+
+                <li>
+                  <span class="icon primary small"
+                    ><i class="bi bi-box"></i></span
+                  ><span>Orders</span>
+                </li>
+              </ul>
+              <button class="btn primary">Logout</button>
             </div>
           </li>
+          <!-- login item -->
+          <!-- <li class="login-item">
+            <a href="./login.html"
+              ><button class="btn-login btn primary text-bold">Login</button></a
+            >
+          </li> -->
         </ul>
       </div>
     </nav>
@@ -252,5 +280,58 @@
         <button class="btn primary">Place Order</button>
       </div>
     </main>
+    <!-- footer -->
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>Policy Info</h3>
+        <p>Privacy policy</p>
+        <p>Terms of Sale</p>
+        <p>Cancellation Policy</p>
+        <p>Return Policy</p>
+        <p>Shipping Policy</p>
+      </div>
+      <div class="footer-col">
+        <h3>Company</h3>
+        <p>About Us</p>
+        <p>In the News</p>
+        <p>Career</p>
+        <p>Blog</p>
+        <p>Contact us</p>
+      </div>
+      <div class="footer-col">
+        <h3>Business</h3>
+        <p>Affiliate Partners</p>
+        <p>EMI</p>
+        <p>Bulk Order</p>
+        <p>Become a Distributor</p>
+      </div>
+      <div class="footer-col">
+        <h3>Help</h3>
+        <p>Claim Warranty</p>
+        <p>Payment Options</p>
+        <p>Sitemap</p>
+      </div>
+      <div class="flex col gap footer-col">
+        <h3>Newsletter & Subscription</h3>
+        <p>
+          Subscription to our newsletter and get information about our latest
+          offers and prices.
+        </p>
+
+        <div class="input-field-icon">
+          <label>
+            <!-- icon container -->
+            <span class="icon small"><i class="fas fa-envelope"></i></span>
+            <input placeholder="E-mail" type="text" />
+          </label>
+        </div>
+        <button class="btn primary">Enter</button>
+      </div>
+    </footer>
+    <a class="icon small circle primary float bottom right" href="#header">
+      <i class="fas fa-arrow-up"></i>
+    </a>
   </body>
 </html>

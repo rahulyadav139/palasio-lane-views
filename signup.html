@@ -29,16 +29,18 @@
       </div>
 
       <div>
-        <ul>
-          <li>
+        <ul class="list-items">
+          <!-- wishlist icon -->
+          <!-- <li class="list-item">
             <div class="badge-container">
               <button class="btn icon medium primary badge-counter">
                 <i class="fas fa-heart"></i>
               </button>
               <span class="badge-number">10</span>
             </div>
-          </li>
-          <li>
+          </li> -->
+          <!-- cart icon -->
+          <li class="list-item">
             <div class="badge-container">
               <button class="btn icon medium primary badge-counter">
                 <i class="fas fa-shopping-cart"></i>
@@ -46,17 +48,36 @@
               <span class="badge-number">10</span>
             </div>
           </li>
-          <li>
-            <div class="profile avatar small">
-              <span class="icon medium white"><i class="fas fa-user"></i></span>
+          <!-- user profile item -->
+          <!-- <li class="profile-item list-item">
+            <div class="avatar small">
+              <img
+                src="https://i.picsum.photos/id/704/536/354.jpg?hmac=k_PDx86tD-ILOtsUOKY9t5LAL5ycKiQ4ryVdlxhWoek"
+                alt="sample"
+              />
             </div>
 
-            <div class="login-dropdown shadow">
-              <button class="btn-login btn primary">Login</button>
-              <p class="text-small">
-                New to Palasio Lane? <a class="link primary">Signup.</a>
-              </p>
+            <div class="profile-item-dropdown shadow">
+              <ul>
+                <li>
+                  <span class="icon primary small"
+                    ><i class="fas fa-user"></i></span
+                  ><span>My Profile</span>
+                </li>
+
+                <li>
+                  <span class="icon primary small"
+                    ><i class="bi bi-box"></i></span
+                  ><span>Orders</span>
+                </li>
+              </ul>
+              <button class="btn primary">Logout</button>
             </div>
+          </li> -->
+          <li class="login-item">
+            <a href="./login.html"
+              ><button class="btn-login btn primary text-bold">Login</button></a
+            >
           </li>
         </ul>
       </div>
@@ -94,7 +115,10 @@
               <a class="link text-small" href="#">forgot password?</a>
             </div>
             <button class="btn primary">Signup</button>
-            <p>Already a member? <a class="link primary">Login</a></p>
+            <p>
+              Already a member?
+              <a href="./login.html" class="link primary">Login</a>
+            </p>
           </form>
           <button class="btn-dismiss btn icon medium">
             <i class="fas fa-times"></i>
