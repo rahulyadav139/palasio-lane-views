@@ -47,3 +47,15 @@
 // });
 
 // dropdown
+
+// login modal
+const btnLogin = document.querySelector('.btn-login');
+const modalBackDrop = document.querySelector('.modal-backdrop');
+const btnDismiss = modalBackDrop.querySelector('.btn-dismiss');
+
+btnLogin.addEventListener('click', () => {
+  modalBackDrop.classList.remove('hidden');
+});
+btnDismiss.addEventListener('click', () => {
+  modalBackDrop.classList.add('hidden');
+});
