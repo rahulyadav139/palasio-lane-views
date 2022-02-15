@@ -1,9 +1,12 @@
 .main {
-  width: 100%;
   max-width: 900px;
   margin: 2rem auto;
+}
+.cart {
+  width: 100%;
   display: flex;
   gap: 2rem;
+  margin-top: 1rem;
 }
 .cart-items {
   flex-basis: 60%;
@@ -13,7 +16,7 @@
   gap: 0.5rem;
   height: fit-content;
   position: sticky;
-  top: 50px;
+  top: 6rem;
 }
 
 .card.cart-item {
@@ -39,4 +42,24 @@
 }
 .cart-item__buttons button {
   font-size: 75%;
+}
+
+@media only screen and (max-width: 450px) {
+  .main {
+    padding: 2rem;
+  }
+  .cart {
+    flex-direction: column;
+  }
+  .price-breakout {
+    margin: 1rem 5rem;
+    order: -1;
+    position: static;
+  }
+  .price-breakout div.hr-line {
+    height: 0.5px;
+  }
+  /* .cart-item__buttons button {
+    width: fit-content;
+  } */
 }

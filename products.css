@@ -1,10 +1,91 @@
 .main-section {
   padding: 2rem;
   display: grid;
-  grid-template-columns: 1.5fr 8.5fr;
+  grid-template-columns: 2fr 8fr;
   gap: 1rem;
 }
 
+/* filter section styling */
+
+.filter-section {
+  padding: 1rem;
+}
+.filter-section__head button {
+  outline: none;
+  background: none;
+  font-family: inherit;
+  font-size: 1rem;
+  color: var(--grey-color);
+  border: none;
+  border-bottom: 1.5px solid var(--primary-color);
+  cursor: pointer;
+}
+.filter-section h4 {
+  margin-bottom: 0.5rem;
+}
+.filter-section__price {
+  margin: 0.5rem;
+}
+.filter-section .hr-line {
+  margin: 1rem auto;
+}
+.filter-section__price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.price__input {
+  flex-basis: 50%;
+}
+.price__input label {
+  font-size: 75%;
+}
+
+.rating-wrapper label {
+  /* display: block; */
+
+  cursor: pointer;
+}
+.rating-wrapper div {
+  margin-bottom: 0.5rem;
+}
+.rating-wrapper input {
+  vertical-align: middle;
+}
+.rating-wrapper span {
+  color: #facd03;
+  padding-left: 0.5rem;
+}
+.rating-wrapper input:checked + label {
+  font-weight: bold;
+}
+.filter-section__buttons {
+  display: none;
+}
+
+/* listing section styling */
+
+.listing-section {
+  padding: 1rem;
+}
+.listing-section .heading-5 {
+  margin-bottom: 0.5rem;
+}
+.listing-section .sorting-container {
+  margin-bottom: 1rem;
+}
+.sorting-container input {
+  display: none;
+}
+.sorting-container label {
+  border-bottom: 1.5px solid transparent;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.sorting-container input:checked + label {
+  border-color: var(--primary-color);
+  font-weight: bold;
+}
 .listing-section__products {
   display: grid;
   grid-template-columns: repeat(4, minmax(10rem, auto));
@@ -13,10 +94,6 @@
 }
 .listing-section__sorting {
   margin-bottom: 1rem;
-}
-.card.ecom {
-  width: 100%;
-  cursor: pointer;
 }
 
 .listing-section__pages {
@@ -34,37 +111,16 @@
   padding: 0.5rem;
   background: var(--off-white-color);
   cursor: pointer;
-}
-/* temp */
-.input-field-icon {
-  border: 1.5px solid var(--input-border-color);
-  padding: 0.2rem 0.4rem;
-  flex-basis: 70%;
-}
-.input-field-icon.rounded-corner {
-  border-radius: 0.5rem;
-}
-.input-field-icon label {
-  width: 100%;
-  display: inline-flex;
-}
-.input-field-icon label span {
-  color: var(--input-border-color);
+  font-weight: bold;
 }
 
-.input-field-icon input {
-  border: none;
-  outline: none;
-  padding: 0.2rem 0.5rem;
-  font-size: inherit;
-  flex-grow: 1;
-  width: 100%;
-  /* font-size: 12px; */
+/* card overlay text */
+
+.card.ecom .overlay p {
+  font-size: 1rem;
 }
-.input-field-icon input {
-  background: transparent;
-}
-/* temp */
+
+/* car model dropdown */
 
 .car-item ul {
   display: none;
@@ -84,4 +140,67 @@
   font-size: 1rem;
   font-weight: bold;
   border-bottom: 1px solid var(--black-color);
+}
+.listing-section__actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.listing-section__actions button:last-child {
+  grid-column-start: 3;
+}
+.listing-section__head button {
+  display: none;
+}
+
+@media only screen and (max-width: 450px) {
+  .filter-section {
+    display: none;
+    font-size: 14.4px;
+    width: 100%;
+    transition: transform 0.5s;
+    transform: translateY(-110%);
+  }
+  .filter-section-show {
+    transform: translateY(0);
+  }
+  .listing-section {
+    width: 100%;
+  }
+  .listing-section__products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .main-section {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .filter-section__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+    position: sticky;
+    bottom: 0;
+    background: var(--white-color);
+    padding-bottom: 1rem;
+  }
+  .filter-section__head {
+    display: none;
+  }
+  .filter-section .first-line {
+    display: none;
+  }
+  .listing-section__head {
+    display: flex;
+    align-items: center;
+  }
+  .listing-section__head button {
+    margin-left: auto;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
+    background: transparent;
+    display: block;
+  }
 }

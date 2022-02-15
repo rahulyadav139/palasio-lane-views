@@ -11,7 +11,7 @@
     />
     <link rel="stylesheet" href="./shared.css" />
     <link rel="stylesheet" href="./auth.css" />
-    <script defer src="./app.js"></script>
+    <script defer src="./signup.js"></script>
   </head>
   <body>
     <!-- e-commerce website navigation -->
@@ -75,28 +75,26 @@
             </div>
           </li> -->
           <li class="login-item">
-            <a href="./login.html"
-              ><button class="btn-login btn primary text-bold">Login</button></a
-            >
+            <button class="btn-signup btn primary text-bold">Signup</button>
           </li>
         </ul>
       </div>
     </nav>
     <main>
-      <div class="modal-backdrop">
+      <div class="modal-backdrop hidden">
         <!-- signup modal -->
 
-        <div class="modal-login shadow">
-          <div class="modal-login__brand flex center col">
+        <div class="modal-signup modal-auth shadow">
+          <div class="modal-auth__brand flex center col">
             <div class="brand-logo">
               <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
               ><i class="fas fa-angle-right"></i>
             </div>
             <h1 class="text-white">palasio lane</h1>
           </div>
-          <form class="modal-login__form">
+          <form class="modal-auth__form">
             <h1 class="text-primary">Sign up</h1>
-            <div class="wrapper-username flex gap">
+            <div class="wrapper-username">
               <div>
                 <label for="firstname">First Name</label>
                 <input class="input-field" id="firstname" type="text" />

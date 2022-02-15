@@ -11,13 +11,14 @@
     />
     <link rel="stylesheet" href="./shared.css" />
     <link rel="stylesheet" href="./products.css" />
+    <script defer src="./products.js"></script>
   </head>
   <body>
     <!-- e-commerce website navigation -->
     <nav class="nav-bar shadow" id="header">
-      <div class="brand-logo">
-        <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
-        ><i class="fas fa-angle-right"></i>
+      <div class="brand">
+        <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+        <span class="brand__text">PALASIO </span>
       </div>
 
       <div class="input-field-icon">
@@ -31,27 +32,25 @@
         <ul class="list-items">
           <!-- wishlist icon -->
           <li class="list-item">
-            <div class="badge-container">
-              <a
-                href="./wishlist.html"
-                class="icon medium primary badge-counter"
-              >
-                <i class="fas fa-heart"></i>
-              </a>
-              <span class="badge-number">10</span>
-            </div>
+            <a href="./wishlist.html">
+              <div class="badge-container">
+                <button class="btn icon medium primary badge-counter">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+            </a>
           </li>
           <!-- cart icon -->
           <li class="list-item">
-            <div class="badge-container">
-              <a
-                href="./cart.html"
-                class="btn icon medium primary badge-counter"
-              >
-                <i class="fas fa-shopping-cart"></i>
-              </a>
-              <span class="badge-number">10</span>
-            </div>
+            <a href="./cart.html">
+              <div class="badge-container">
+                <button class="btn icon medium primary badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+            </a>
           </li>
           <!-- user profile item -->
           <li class="profile-item list-item">
@@ -79,7 +78,6 @@
               <button class="btn primary">Logout</button>
             </div>
           </li>
-          <!-- login item -->
           <!-- <li class="login-item">
             <a href="./login.html"
               ><button class="btn-login btn primary text-bold">Login</button></a
@@ -90,19 +88,20 @@
     </nav>
     <main class="main-section">
       <div class="filter-section">
-        <a href="#" class="link primary">Reset</a>
+        <div class="filter-section__head flex space-between align-center">
+          <div class="heading-5">FILTERS</div>
+          <button>Reset</button>
+        </div>
+        <div class="first-line hr-line fad"></div>
+
         <h4>Price Range</h4>
-        <div class="flex space-between align-center">
+        <div class="filter-section__price">
           <p>Max</p>
-          <div class="input-field-icon">
+          <div class="input-field-icon price__input">
             <label>
               <!-- icon container -->
               <span class="icon small"><i class="fas fa-rupee-sign"></i></span>
-              <input
-                class="testnow"
-                placeholder="Maximum Price"
-                type="number"
-              />
+              <input class="testnow" placeholder="Price" type="number" />
             </label>
           </div>
         </div>
@@ -112,7 +111,7 @@
         <div class="hr-line fad"></div>
         <h4>Car Model</h4>
         <div class="car-item">
-          <input class="car__brand-input" type="checkbox" id="tata" />
+          <input class="car__brand-input" type="checkbox" id="tata" checked />
           <label class="car__brand-label" for="tata">Tata</label>
           <ul class="car__models">
             <li>
@@ -138,7 +137,12 @@
           </ul>
         </div>
         <div class="car-item">
-          <input class="car__brand-input" type="checkbox" id="mahindra" />
+          <input
+            class="car__brand-input"
+            type="checkbox"
+            id="mahindra"
+            checked
+          />
           <label class="car__brand-label" for="mahindra">Mahindra</label>
 
           <ul class="car__models">
@@ -170,23 +174,73 @@
 
         <div class="hr-line fad"></div>
         <h4>Rating</h4>
+
         <!-- rating -->
-        <div class="rating-container">
-          <input type="radio" name="rate" id="rate-5" />
-          <label for="rate-5"><i class="fas fa-star"></i></label>
-          <input type="radio" name="rate" id="rate-4" />
-          <label for="rate-4"><i class="fas fa-star"></i></label>
-          <input type="radio" name="rate" id="rate-3" />
-          <label for="rate-3"><i class="fas fa-star"></i></label>
-          <input type="radio" name="rate" id="rate-2" />
-          <label for="rate-2"><i class="fas fa-star"></i></label>
-          <input type="radio" name="rate" id="rate-1" />
-          <label for="rate-1"><i class="fas fa-star"></i></label>
+        <div class="rating-wrapper">
+          <div>
+            <input type="radio" name="filter-rating" id="rate-4" rate />
+            <label for="rate-4"
+              ><span class="starred"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i></span
+              ><i class="far fa-star"></i> & up</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="filter-rating" id="rate-3" />
+            <label for="rate-3"
+              ><span class="starred"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                ><i class="fas fa-star"></i></span
+              ><i class="far fa-star"></i><i class="far fa-star"></i> &
+              up</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="filter-rating" id="rate-2" />
+            <label for="rate-2"
+              ><span class="starred"
+                ><i class="fas fa-star"></i><i class="fas fa-star"></i></span
+              ><i class="far fa-star"></i><i class="far fa-star"></i
+              ><i class="far fa-star"></i> & up</label
+            >
+          </div>
+          <div>
+            <input type="radio" name="filter-rating" id="rate-1" />
+            <label for="rate-1"
+              ><span class="starred"><i class="fas fa-star"></i></span
+              ><i class="far fa-star"></i><i class="far fa-star"></i
+              ><i class="far fa-star"></i><i class="far fa-star"></i> &
+              up</label
+            >
+          </div>
         </div>
 
-        <button style="width: 100%" class="btn primary">Filter</button>
+        <div class="filter-section__buttons">
+          <button class="btn primary">Filter</button>
+          <button class="btn-reset btn outline primary">Reset</button>
+        </div>
       </div>
       <div class="listing-section">
+        <div class="listing-section__head heading-5">
+          Showing All Products
+          <span class="text-grey heading-6">( showing 20 products)</span>
+          <button class="btn-filter">
+            <i class="bi bi-filter-right"></i>Filter
+          </button>
+        </div>
+
+        <div class="sorting-container flex gap align-center">
+          <div class="heading-6">Sort By:</div>
+          <input type="radio" name="sort" id="popularity" checked />
+          <label for="popularity">Popularity</label>
+
+          <input type="radio" name="sort" id="low-to-high" />
+          <label for="low-to-high">Price - Low to High</label>
+          <input type="radio" name="sort" id="high-to-low" />
+          <label for="high-to-low">Price - High to Low</label>
+        </div>
+        <!-- <div class="hr-line fad"></div> -->
         <div class="listing-section__products">
           <!-- ecom card with badge -->
 
@@ -200,10 +254,10 @@
               <!-- badge containers -->
 
               <!-- highlighted badge with red color -->
-              <span class="badge highlight top left">-20%</span>
+              <!-- <span class="badge highlight top left">-20%</span> -->
 
               <!-- standard badge -->
-              <span class="badge bottom right"
+              <span class="badge bottom left"
                 >4.4 <i class="fas fa-star"></i> | 123</span
               >
             </div>
@@ -215,7 +269,7 @@
             </div>
             <h2 class="title">Vintage artifacts vase</h2>
             <div class="price">
-              <div class="price__old">$100</div>
+              <!-- <div class="price__old">$100</div> -->
               <div class="price__new">$80</div>
             </div>
 
@@ -237,7 +291,7 @@
               <span class="badge highlight top left">-20%</span>
 
               <!-- standard badge -->
-              <span class="badge bottom right"
+              <span class="badge bottom left"
                 >4.4 <i class="fas fa-star"></i> | 123</span
               >
             </div>
@@ -271,7 +325,7 @@
               <span class="badge highlight top left">-20%</span>
 
               <!-- standard badge -->
-              <span class="badge bottom right"
+              <span class="badge bottom left"
                 >4.4 <i class="fas fa-star"></i> | 123</span
               >
             </div>
@@ -284,6 +338,40 @@
             <h2 class="title">Vintage artifacts vase</h2>
             <div class="price">
               <div class="price__old">$100</div>
+              <div class="price__new">$80</div>
+            </div>
+
+            <button class="btn primary"><strong>Add</strong></button>
+          </div>
+
+          <!-- ecom card with badge -->
+
+          <div class="card shadow ecom ribbon" ribbon-content="Exclusive">
+            <div class="image">
+              <img
+                src="./Assets/categories/interior/car-perfume-400x400.webp"
+                alt=""
+              />
+
+              <!-- badge containers -->
+
+              <!-- highlighted badge with red color -->
+              <!-- <span class="badge highlight top left">-20%</span> -->
+
+              <!-- standard badge -->
+              <span class="badge bottom left"
+                >4.4 <i class="fas fa-star"></i> | 123</span
+              >
+            </div>
+            <div class="flex space-between">
+              <h1 class="brand">Impos Decor</h1>
+              <button class="btn icon medium primary">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+            <h2 class="title">Vintage artifacts vase</h2>
+            <div class="price">
+              <!-- <div class="price__old">$100</div> -->
               <div class="price__new">$80</div>
             </div>
 
@@ -305,7 +393,7 @@
               <span class="badge highlight top left">-20%</span>
 
               <!-- standard badge -->
-              <span class="badge bottom right"
+              <span class="badge bottom left"
                 >4.4 <i class="fas fa-star"></i> | 123</span
               >
             </div>
@@ -322,40 +410,9 @@
             </div>
 
             <button class="btn primary"><strong>Add</strong></button>
-          </div>
 
-          <!-- ecom card with badge -->
-
-          <div class="card shadow ecom">
-            <div class="image">
-              <img
-                src="./Assets/categories/interior/car-perfume-400x400.webp"
-                alt=""
-              />
-
-              <!-- badge containers -->
-
-              <!-- highlighted badge with red color -->
-              <span class="badge highlight top left">-20%</span>
-
-              <!-- standard badge -->
-              <span class="badge bottom right"
-                >4.4 <i class="fas fa-star"></i> | 123</span
-              >
-            </div>
-            <div class="flex space-between">
-              <h1 class="brand">Impos Decor</h1>
-              <button class="btn icon medium primary">
-                <i class="far fa-heart"></i>
-              </button>
-            </div>
-            <h2 class="title">Vintage artifacts vase</h2>
-            <div class="price">
-              <div class="price__old">$100</div>
-              <div class="price__new">$80</div>
-            </div>
-
-            <button class="btn primary"><strong>Add</strong></button>
+            <!-- overlay text -->
+            <span class="overlay"><p>out of stock</p></span>
           </div>
         </div>
 
@@ -409,14 +466,18 @@
           offers and prices.
         </p>
 
-        <div class="input-field-icon">
-          <label>
-            <!-- icon container -->
-            <span class="icon small"><i class="fas fa-envelope"></i></span>
-            <input placeholder="E-mail" type="text" />
-          </label>
+        <div class="flex">
+          <div class="input-field-icon">
+            <label>
+              <!-- icon container -->
+              <span class="icon small"><i class="fas fa-envelope"></i></span>
+              <input placeholder="E-mail" type="text" />
+            </label>
+          </div>
+          <button class="btn primary">
+            <i class="bi bi-arrow-right-short"></i>
+          </button>
         </div>
-        <button class="btn primary">Enter</button>
       </div>
     </footer>
     <a class="icon small circle primary float bottom right" href="#header">
