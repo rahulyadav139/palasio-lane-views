@@ -15,10 +15,12 @@
   <body>
     <!-- e-commerce website navigation -->
     <nav class="nav-bar shadow" id="header">
-      <div class="brand">
-        <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
-        <span class="brand__text">PALASIO<br />LANE</span>
-      </div>
+      <a href="./index.html">
+        <div class="brand">
+          <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+          <span class="brand__text">PALASIO<br />LANE</span>
+        </div>
+      </a>
 
       <div class="input-field-icon">
         <label
@@ -31,21 +33,25 @@
         <ul class="list-items">
           <!-- wishlist icon -->
           <li class="list-item">
-            <div class="badge-container">
-              <button class="btn icon medium primary badge-counter">
-                <i class="fas fa-heart"></i>
-              </button>
-              <span class="badge-number">10</span>
-            </div>
+            <a href="./wishlist.html">
+              <div class="badge-container">
+                <button class="btn icon medium primary badge-counter">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+            </a>
           </li>
           <!-- cart icon -->
           <li class="list-item">
-            <div class="badge-container">
-              <button class="btn icon medium primary badge-counter">
-                <i class="fas fa-shopping-cart"></i>
-              </button>
-              <span class="badge-number">10</span>
-            </div>
+            <a href="./cart.html">
+              <div class="badge-container">
+                <button class="btn icon medium primary badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+            </a>
           </li>
           <!-- user profile item -->
           <li class="profile-item list-item">
@@ -70,7 +76,9 @@
                   ><span>Orders</span>
                 </li>
               </ul>
-              <button class="btn primary">Logout</button>
+              <button class="btn primary">
+                <a href="./index.html">Logout</a>
+              </button>
             </div>
           </li>
           <!-- <li class="login-item">

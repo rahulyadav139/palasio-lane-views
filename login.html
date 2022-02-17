@@ -16,10 +16,12 @@
   <body>
     <!-- e-commerce website navigation -->
     <nav class="nav-bar shadow" id="header">
-      <div class="brand-logo">
-        <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
-        ><i class="fas fa-angle-right"></i>
-      </div>
+      <a href="./index.html">
+        <div class="brand">
+          <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+          <span class="brand__text">PALASIO<br />LANE</span>
+        </div>
+      </a>
 
       <div class="input-field-icon">
         <label
@@ -41,12 +43,14 @@
           </li> -->
           <!-- cart icon -->
           <li class="list-item">
+            <a href="./cart.html">
             <div class="badge-container">
               <button class="btn icon medium primary badge-counter">
                 <i class="fas fa-shopping-cart"></i>
               </button>
               <span class="badge-number">10</span>
             </div>
+            </a>
           </li>
           <!-- user profile item -->
           <!-- <li class="profile-item list-item">
@@ -102,7 +106,10 @@
             <div class="flex end">
               <a class="link text-small" href="#">forgot password?</a>
             </div>
-            <button class="btn primary">Login</button>
+
+            <button type="button" class="btn primary">
+              <a href="./products.html">Login</a>
+            </button>
             <p>
               New to palasio lane?
               <a href="./signup.html" class="btn-signup link primary"
