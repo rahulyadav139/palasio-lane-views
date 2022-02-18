@@ -1,26 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+
 a {
   cursor: pointer;
 }
+.nav-bar {
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--white-color);
+}
 
-.brand-logo {
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.brand__logo {
   font-size: 1.5rem;
+  padding-right: 1rem;
   color: var(--primary-color-dark);
+  border-right: 2px solid var(--primary-color-dark);
+}
+
+.brand__text {
+  letter-spacing: 0.5rem;
+  color: var(--primary-color-dark);
+  font-weight: bold;
+  font-family: 'Quintessential', cursive;
 }
 .input-field-icon {
   width: 100%;
-  max-width: 37.5rem;
-}
-.nav-bar ul li:last-child {
-  position: relative;
-}
-.nav-bar ul li:last-child:hover .login-dropdown {
-  display: block;
-}
-.profile {
-  cursor: pointer;
+  max-width: 20rem;
 }
 
-.login-dropdown {
+.nav-bar .profile-item {
+  position: relative;
+  cursor: pointer;
+}
+.nav-bar .profile-item:hover .profile-item-dropdown {
+  display: block;
+}
+
+.profile-item-dropdown {
   position: absolute;
   top: 3rem;
   right: 0;
@@ -31,11 +54,26 @@ a {
   text-align: center;
   background: var(--off-white-color);
 }
-.login-dropdown button {
+.profile-item-dropdown button {
   margin: auto;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-top: 0.5rem;
 }
 
+.profile-item-dropdown ul li {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  border-bottom: 0.5px solid var(--grey-color);
+}
+.profile-item-dropdown ul li:hover,
+.profile-item-dropdown ul li:active {
+  background: var(--primary-color-light);
+}
 /* footer */
 
 .footer {
@@ -64,4 +102,16 @@ a {
   color: var(--white-color);
   transform: translateX(0.5rem);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 10rem;
+  }
+  .footer .footer-col:last-child {
+    grid-column: 1 / -1;
+    margin-top: 2rem;
+  }
 }

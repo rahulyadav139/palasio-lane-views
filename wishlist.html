@@ -15,10 +15,12 @@
   <body>
     <!-- e-commerce website navigation -->
     <nav class="nav-bar shadow" id="header">
-      <div class="brand-logo">
-        <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
-        ><i class="fas fa-angle-right"></i>
-      </div>
+      <a href="./index.html">
+        <div class="brand">
+          <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
+          <span class="brand__text">PALASIO<br />LANE</span>
+        </div>
+      </a>
 
       <div class="input-field-icon">
         <label
@@ -28,40 +30,68 @@
       </div>
 
       <div>
-        <ul>
-          <li>
-            <div class="badge-container">
-              <button class="btn icon medium primary badge-counter">
-                <i class="fas fa-heart"></i>
-              </button>
-              <span class="badge-number">10</span>
-            </div>
+        <ul class="list-items">
+          <!-- wishlist icon -->
+          <li class="list-item">
+            <a href="./wishlist.html">
+              <div class="badge-container">
+                <button class="btn icon medium primary badge-counter">
+                  <i class="fas fa-heart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+            </a>
           </li>
-          <li>
-            <div class="badge-container">
-              <button class="btn icon medium primary badge-counter">
-                <i class="fas fa-shopping-cart"></i>
-              </button>
-              <span class="badge-number">10</span>
-            </div>
+          <!-- cart icon -->
+          <li class="list-item">
+            <a href="./cart.html">
+              <div class="badge-container">
+                <button class="btn icon medium primary badge-counter">
+                  <i class="fas fa-shopping-cart"></i>
+                </button>
+                <span class="badge-number">10</span>
+              </div>
+            </a>
           </li>
-          <li>
-            <div class="profile avatar small">
-              <span class="icon medium white"><i class="fas fa-user"></i></span>
+          <!-- user profile item -->
+          <li class="profile-item list-item">
+            <div class="avatar small">
+              <img
+                src="https://i.picsum.photos/id/704/536/354.jpg?hmac=k_PDx86tD-ILOtsUOKY9t5LAL5ycKiQ4ryVdlxhWoek"
+                alt="sample"
+              />
             </div>
 
-            <div class="login-dropdown shadow">
-              <button class="btn primary">Login</button>
-              <p class="text-small">
-                New to Palasio Lane? <a class="link primary">Signup.</a>
-              </p>
+            <div class="profile-item-dropdown shadow">
+              <ul>
+                <li>
+                  <span class="icon primary small"
+                    ><i class="fas fa-user"></i></span
+                  ><span>My Profile</span>
+                </li>
+
+                <li>
+                  <span class="icon primary small"
+                    ><i class="bi bi-box"></i></span
+                  ><span>Orders</span>
+                </li>
+              </ul>
+              <button class="btn primary">Logout</button>
             </div>
           </li>
+          <!-- <li class="login-item">
+            <a href="./login.html"
+              ><button class="btn-login btn primary text-bold">Login</button></a
+            >
+          </li> -->
         </ul>
       </div>
     </nav>
     <main class="main">
-      <h1>Wishlist</h1>
+      <div class="heading-4">
+        My Wishlist <span class="text-grey heading-6">( 193 items )</span>
+      </div>
+      <div class="hr-line fad"></div>
       <div class="wishlist">
         <!-- ecom card with badge -->
 
@@ -348,14 +378,18 @@
           offers and prices.
         </p>
 
-        <div class="input-field-icon">
-          <label>
-            <!-- icon container -->
-            <span class="icon small"><i class="fas fa-envelope"></i></span>
-            <input placeholder="E-mail" type="text" />
-          </label>
+        <div class="flex">
+          <div class="input-field-icon">
+            <label>
+              <!-- icon container -->
+              <span class="icon small"><i class="fas fa-envelope"></i></span>
+              <input placeholder="E-mail" type="text" />
+            </label>
+          </div>
+          <button class="btn primary">
+            <i class="bi bi-arrow-right-short"></i>
+          </button>
         </div>
-        <button class="btn primary">Enter</button>
       </div>
     </footer>
     <a class="icon small circle primary float bottom right" href="#header">

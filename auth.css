@@ -1,18 +1,33 @@
-.modal-login {
+.modal-auth {
   width: 100%;
   max-width: 700px;
   display: flex;
   margin: auto;
   left: 50%;
   position: absolute;
+  transform: translateX(-50%);
+  transition: all 0.5s ease-in-out;
+}
+.modal-login {
+  top: -100%;
+}
+.modal-signup {
+  bottom: -100%;
+}
+
+.modal-login-show {
   top: 50%;
   transform: translateY(-50%) translateX(-50%);
 }
-.modal-login__brand {
+.modal-signup-show {
+  bottom: 50%;
+  transform: translateY(50%) translateX(-50%);
+}
+.modal-auth__brand {
   flex-basis: 40%;
   background: var(--primary-color);
 }
-.modal-login__form {
+.modal-auth__form {
   flex-basis: 60%;
   display: flex;
   flex-direction: column;
@@ -20,16 +35,38 @@
   padding: 2rem;
   background: var(--white-color);
 }
-.modal-login__form label {
+.modal-auth__form label {
   display: block;
 }
-.modal-login .btn-dismiss {
+.modal-auth .btn-dismiss {
   position: absolute;
   margin: 2rem;
   top: 0;
   right: 0;
 }
-.modal-login .brand-logo {
+.modal-auth .brand-logo {
   color: var(--white-color);
   font-size: 3rem;
+}
+.wrapper-username {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.wrapper-username input {
+  width: 100%;
+}
+.wrapper-username label {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 450px) {
+  .modal-auth__brand {
+    display: none;
+  }
+  .modal-auth {
+    display: block;
+    width: 80%;
+  }
 }
