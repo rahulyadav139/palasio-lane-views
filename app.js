@@ -1,47 +1,49 @@
-const slides = document.querySelectorAll('.slide');
-const btnLeft = document.querySelector('.btn-left');
-const btnRight = document.querySelector('.btn-right');
+// const slides = document.querySelectorAll('.slide');
+// const btnLeft = document.querySelector('.btn-left');
+// const btnRight = document.querySelector('.btn-right');
 
-let slide = 0;
+// let slide = 0;
 
-const nextSlide = () => {
-  slides.forEach(el => el.classList.add('hidden'));
+// const nextSlide = () => {
+//   slides.forEach(el => el.classList.add('hidden'));
 
-  if (slide === 3) {
-    slide = 0;
-  }
+//   if (slide === 3) {
+//     slide = 0;
+//   }
 
-  slides[slide].classList.remove('hidden');
+//   slides[slide].classList.remove('hidden');
 
-  slide++;
-};
+//   slide++;
+// };
 
-const prevSlide = () => {
-  slides.forEach(el => el.classList.add('hidden'));
+// const prevSlide = () => {
+//   slides.forEach(el => el.classList.add('hidden'));
 
-  if (slide === 0) {
-    slide = 3;
-  }
+//   if (slide === 0) {
+//     slide = 3;
+//   }
 
-  slides[slide].classList.remove('hidden');
+//   slides[slide].classList.remove('hidden');
 
-  slide--;
-};
+//   slide--;
+// };
 
-const timer = setInterval(() => {
-  slideShow();
-}, 5000);
+// const timer = setInterval(() => {
+//   slideShow();
+// }, 5000);
 
-timer();
+// timer();
 
-btnLeft.addEventListener('click', () => {
-  //   clearInterval(timer);
-  prevSlide();
-  //   setInterval(timer);
-});
+// btnLeft.addEventListener('click', () => {
+//   //   clearInterval(timer);
+//   prevSlide();
+//   //   setInterval(timer);
+// });
 
-btnRight.addEventListener('click', () => {
-  //   clearInterval(timer);
-  nextSlide();
-  //   setInterval(timer);
-});
+// btnRight.addEventListener('click', () => {
+//   //   clearInterval(timer);
+//   nextSlide();
+//   //   setInterval(timer);
+// });
+
+// dropdown
