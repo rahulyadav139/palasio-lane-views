@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- e-commerce website navigation -->
-    <nav class="nav-bar shadow" id="header">
+    <nav class="nav-bar shadow">
       <a href="./index.html">
         <div class="brand">
           <span class="brand__logo"><i class="bi bi-hurricane"></i></span>
@@ -102,17 +102,17 @@
           />
         </div>
         <div class="product-detail__text">
-          <h1 class="brand">
+          <h1 class="product-brand">
             In publishing and graphic design, Lorem ipsum is a placeholder text
           </h1>
-          <h2 class="title">Loud Speaker</h2>
+          <h2 class="product-title">Loud Speaker</h2>
           <div class="rating">
             4.4 <i class="fas fa-star"></i> | 3.9k Ratings
           </div>
-          <div class="hr-line solid grey"></div>
+          <div class="hr-line thin solid grey"></div>
           <div class="price flex gap">
-            <div class="price__old">$100</div>
-            <div class="price__new">$80</div>
+            <div class="price__original">$100</div>
+            <div class="price__discounted">$80</div>
           </div>
           <div class="text-details">inclusive of all taxes</div>
           <div class="buttons">
@@ -208,8 +208,11 @@
         </div>
       </div>
     </footer>
-    <a class="icon small circle primary float bottom right" href="#header">
+    <button
+      class="btn-scroll-top btn icon medium circle primary float bottom right"
+    >
       <i class="fas fa-arrow-up"></i>
-    </a>
+    </button>
+    <script src="./app.js"></script>
   </body>
 </html>

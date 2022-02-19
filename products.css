@@ -34,6 +34,9 @@
   align-items: center;
   justify-content: space-between;
 }
+.car__models {
+  margin: 0.5rem auto;
+}
 .price__input {
   flex-basis: 50%;
 }
@@ -42,15 +45,13 @@
 }
 
 .rating-wrapper label {
-  /* display: block; */
-
   cursor: pointer;
 }
 .rating-wrapper div {
   margin-bottom: 0.5rem;
 }
 .rating-wrapper input {
-  vertical-align: middle;
+  display: none;
 }
 .rating-wrapper span {
   color: #facd03;
@@ -150,6 +151,9 @@
 }
 .listing-section__head button {
   display: none;
+}
+.listing-section__pages {
+  margin: 1rem auto;
 }
 
 @media only screen and (max-width: 450px) {

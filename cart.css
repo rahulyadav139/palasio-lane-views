@@ -1,5 +1,5 @@
 .main {
-  max-width: 900px;
+  max-width: 56.25rem;
   margin: 2rem auto;
 }
 .cart {
@@ -59,7 +59,4 @@
   .price-breakout div.hr-line {
     height: 0.5px;
   }
-  /* .cart-item__buttons button {
-    width: fit-content;
-  } */
 }
