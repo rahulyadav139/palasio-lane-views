@@ -1,3 +1,7 @@
+.hidden-modal {
+  visibility: hidden;
+}
+
 .modal-auth {
   width: 100%;
   max-width: 43.75rem;

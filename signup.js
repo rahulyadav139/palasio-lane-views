@@ -4,14 +4,13 @@ const modalBackDrop = document.querySelector('.modal-backdrop');
 const btnDismiss = modalBackDrop.querySelector('.btn-dismiss');
 
 btnSignup.addEventListener('click', () => {
-  console.log('test');
-  modalBackDrop.classList.remove('hidden');
+  modalBackDrop.classList.remove('hidden-modal');
   modalBackDrop
     .querySelector('.modal-signup')
     .classList.add('modal-signup-show');
 });
 btnDismiss.addEventListener('click', () => {
-  modalBackDrop.classList.add('hidden');
+  modalBackDrop.classList.add('hidden-modal');
   modalBackDrop
     .querySelector('.modal-signup')
     .classList.remove('modal-signup-show');

@@ -50,9 +50,7 @@
 .rating-wrapper div {
   margin-bottom: 0.5rem;
 }
-.rating-wrapper input {
-  display: none;
-}
+
 .rating-wrapper span {
   color: #facd03;
   padding-left: 0.5rem;
@@ -114,7 +112,9 @@
   cursor: pointer;
   font-weight: bold;
 }
-
+.dark-theme .listing-section__pages ul li {
+  background: var(--black-color);
+}
 /* card overlay text */
 
 .card.ecom .overlay p {
