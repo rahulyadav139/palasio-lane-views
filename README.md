@@ -31,7 +31,7 @@ Shop online for a wide range of Car Decor Accessories with Palasio Lane!
 
 Get ready you customize your car with Palasio Lane. Choose different categories to shop products. Here you can find testimonials too.
 
-_Homepage_ https://priceless-kilby-a2aaf1.netlify.app/
+_Homepage_ https://palasio-lane.netlify.app/
 
 ---
 
@@ -39,7 +39,7 @@ _Homepage_ https://priceless-kilby-a2aaf1.netlify.app/
 
 Users need to login to access wishlist, orders if they are member already with account credential like email address and password.
 
-_Login Page_ https://boring-sinoussi-e9cc2d.netlify.app/login.html
+_Login Page_ https://palasio-lane.netlify.app/login.html
 
 ---
 
@@ -47,7 +47,7 @@ _Login Page_ https://boring-sinoussi-e9cc2d.netlify.app/login.html
 
 If users are new to palasio lane they can create an account within seconds with just providing email address, name and password.
 
-_signup Page_ https://boring-sinoussi-e9cc2d.netlify.app/signup.html
+_signup Page_ https://palasio-lane.netlify.app/signup.html
 
 ---
 
@@ -55,7 +55,7 @@ _signup Page_ https://boring-sinoussi-e9cc2d.netlify.app/signup.html
 
 Here you find products with variety and offers. Filter out what you want. Sort products by your choice.
 
-_Product Listing Page_ https://boring-sinoussi-e9cc2d.netlify.app/products.html
+_Product Listing Page_ https://palasio-lane.netlify.app/products.html
 
 ---
 
@@ -63,7 +63,7 @@ _Product Listing Page_ https://boring-sinoussi-e9cc2d.netlify.app/products.html
 
 If you want to know more about a product, this page will page you to inform more about a product. It contains key features, shipping details etc.
 
-_Product Detail Page_ https://boring-sinoussi-e9cc2d.netlify.app/product-detail.html
+_Product Detail Page_ https://palasio-lane.netlify.app/product-detail.html
 
 ---
 
@@ -71,7 +71,7 @@ _Product Detail Page_ https://boring-sinoussi-e9cc2d.netlify.app/product-detail.
 
 If you don't want to purchase a product right now, you can move these to your wishlist page. Access your wishlist products after becoming a member of Palasio Lane.
 
-_Wishlist Page_ https://boring-sinoussi-e9cc2d.netlify.app/wishlist.html
+_Wishlist Page_ https://palasio-lane.netlify.app/wishlist.html
 
 ---
 
@@ -79,7 +79,7 @@ _Wishlist Page_ https://boring-sinoussi-e9cc2d.netlify.app/wishlist.html
 
 Cart page provides you price breakout, discount details etc. Manage your product cart like remove a product if you want to purchase or move them to your wishlist for purchasing later.
 
-_Cart Page_ https://boring-sinoussi-e9cc2d.netlify.app/cart.html
+_Cart Page_ https://palasio-lane.netlify.app/cart.html
 
 ---
 
