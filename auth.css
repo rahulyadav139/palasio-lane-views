@@ -1,6 +1,9 @@
 .hidden-modal {
   visibility: hidden;
 }
+.modal-backdrop {
+  z-index: 60;
+}
 
 .modal-auth {
   width: 100%;
@@ -11,6 +14,9 @@
   position: absolute;
   transform: translateX(-50%);
   transition: all 0.5s ease-in-out;
+}
+.modal-auth .input-field-icon {
+  width: 100%;
 }
 .modal-login {
   top: -100%;
@@ -42,6 +48,9 @@
 .modal-auth__form label {
   display: block;
   font-size: 0.8rem;
+}
+.input-field-icon label {
+  display: inline-flex;
 }
 
 .modal-auth .btn-dismiss {

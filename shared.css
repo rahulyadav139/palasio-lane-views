@@ -39,7 +39,7 @@ a {
   font-weight: bold;
   font-family: 'Quintessential', cursive;
 }
-.input-field-icon {
+.nav-bar .input-field-icon {
   width: 100%;
   max-width: 20rem;
 }
