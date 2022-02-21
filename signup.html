@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./shared.css" />
     <link rel="stylesheet" href="./auth.css" />
     <script defer src="./signup.js"></script>
+    <script defer src="./app.js"></script>
   </head>
   <body>
     <!-- e-commerce website navigation -->
@@ -116,12 +117,14 @@
         </ul>
 
         <!-- <div class="btn-container">
-        <button class="btn primary">Logout</button>
+        <button class="btn primary"><a href="/">Logout</a></button>
       </div> -->
 
         <div class="btn-container">
-          <button class="btn primary">Login</button>
-          <button class="btn primary outline">Signup</button>
+          <button class="btn primary"><a href="./login.html">Login</a></button>
+          <button class="btn primary outline">
+            <a href="./signup.html">Signup</a>
+          </button>
         </div>
         <div class="hr-line fad"></div>
       </div>
@@ -129,10 +132,10 @@
 
     <!-- main section -->
     <main>
-      <div class="modal-backdrop hidden-modal">
+      <div class="modal-backdrop">
         <!-- signup modal -->
 
-        <div class="modal-signup modal-auth shadow">
+        <div class="modal-signup modal-auth modal-signup-show shadow">
           <div class="modal-auth__brand flex center col">
             <div class="brand-logo">
               <i class="fas fa-angle-left"></i><i class="fas fa-globe"></i
@@ -177,6 +180,11 @@
           </button>
         </div>
       </div>
+      <button
+        class="btn-scroll-top btn icon medium circle primary float bottom right"
+      >
+        <i class="fas fa-arrow-up"></i>
+      </button>
     </main>
   </body>
 </html>

@@ -151,6 +151,7 @@ a {
 .hamburger-menu {
   z-index: 51;
   transition: all 0.5s ease-in-out;
+  display: none;
 }
 .hamburger-menu--hide {
   transform: translateX(-150%);
@@ -241,7 +242,9 @@ a {
   .nav-bar .brand__text {
     display: none;
   }
-  .hamburger-menu .brand__text {
+
+  .hamburger-menu .brand__text,
+  .hamburger-menu {
     display: block;
   }
   .nav-bar > div:first-child {
